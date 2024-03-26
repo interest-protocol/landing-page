@@ -1,4 +1,4 @@
-# IPX INTERFACE TEMPLATE
+# IPX Landing Page
 
 ## Contributing
 
@@ -13,7 +13,6 @@ Use the version mentioned on `.nvmrc`
 ```bash
   nvm use # or if u don't have installed use just nvm install
 ```
-
 
 Install the project dependencies with yarn
 
