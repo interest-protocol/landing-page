@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
-    "@interest-protocol/ui-kit": "0.2.2-alpha",
+    "@interest-protocol/ui-kit": "0.2.26-alpha",
     "@stylin.js/react": "1.0.5-alpha.0",
     "next": "14.0.3",
     "prettier": "^3.1.0",
