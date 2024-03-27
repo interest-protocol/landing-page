@@ -4,8 +4,8 @@ import unikey from 'unikey';
 
 import Particle from './particle';
 
-const Header: FC = () => (
-  <Box width="100vw" height="100vh" position="fixed">
+const HeroBackground: FC = () => (
+  <Box position="absolute" top="0">
     {Array.from({ length: 50 }, () => (
       <Particle key={unikey()} />
     ))}
@@ -43,4 +43,4 @@ const Header: FC = () => (
   </Box>
 );
 
-export default Header;
+export default HeroBackground;
