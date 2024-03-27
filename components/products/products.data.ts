@@ -2,6 +2,7 @@ import { ProductCardProps } from '../product-card/product-card.types';
 import {
   AirdropSVG,
   BookSVG,
+  CogSVG,
   CoinSVG,
   DAOSVG,
   IPXMovementSVG,
@@ -79,7 +80,7 @@ export const PRODUCTS: ReadonlyArray<ProductCardProps> = [
       },
       {
         title: 'Capabilities',
-        Icon: CoinSVG,
+        Icon: CogSVG,
       },
       {
         title: 'Utilities',
