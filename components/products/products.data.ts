@@ -17,6 +17,7 @@ import {
 
 export const PRODUCTS: ReadonlyArray<ProductCardProps> = [
   {
+    id: 'suicoins',
     Icon: SuiCoinsSVG,
     name: 'Suicoins',
     description:
@@ -40,6 +41,7 @@ export const PRODUCTS: ReadonlyArray<ProductCardProps> = [
     ],
   },
   {
+    id: 'movement',
     Icon: IPXMovementSVG,
     name: 'Interest DEX',
     description:
@@ -63,6 +65,7 @@ export const PRODUCTS: ReadonlyArray<ProductCardProps> = [
     ],
   },
   {
+    id: 'suitears',
     Icon: SuiTearsSVG,
     name: 'Suitears',
     description: 'Ready-to-use suite of smart contracts. Learn from the best.',
@@ -89,6 +92,7 @@ export const PRODUCTS: ReadonlyArray<ProductCardProps> = [
     ],
   },
   {
+    id: 'suprotocol',
     Icon: SuProtocolSVG,
     name: 'Su Protocol',
     description: 'Capital-Efficient Collateral Debt Protocol.',

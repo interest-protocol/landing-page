@@ -18,6 +18,7 @@ const Footer: FC = () => (
       <Shadow />
     </Motion>
     <Box
+      p="l"
       my="8xl"
       gap="8xl"
       mx="auto"
@@ -27,10 +28,12 @@ const Footer: FC = () => (
       flexDirection="column"
     >
       <Box
+        gap="2xl"
         display="flex"
-        justifyContent="space-between"
         color="onSurface"
-        mb="8xl"
+        mb={['unset', 'unset', '8xl']}
+        justifyContent="space-between"
+        flexDirection={['column', 'column', 'row']}
       >
         <Typography variant="body" size="medium">
           Open source software build by leading Move engineers in Web3.
@@ -38,8 +41,8 @@ const Footer: FC = () => (
         <Box
           gap="s"
           display="flex"
-          alignItems="flex-end"
           flexDirection="column"
+          alignItems={['unset', 'unset', 'flex-end']}
         >
           <a
             href="https://docs.interestprotocol.com"
@@ -81,9 +84,9 @@ const Footer: FC = () => (
       </Box>
       <Box
         display="flex"
-        justifyContent="space-between"
         alignItems="flex-end"
-        mt="8xl"
+        justifyContent="space-between"
+        mt={['unset', 'unset', '8xl']}
       >
         <Social />
         <Typography

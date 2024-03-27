@@ -1,9 +1,11 @@
 import { Box, Button, Motion, Typography } from '@interest-protocol/ui-kit';
 import { FC } from 'react';
+import unikey from 'unikey';
 
-import HeroBackground from '../hero-background';
+import { PRODUCTS } from '../products/products.data';
 import Social from '../social';
 import { ArrowDownSVG, LogoSVG } from '../svg';
+import HeroBackground from './hero-background';
 
 const Arrow = (
   <Motion
@@ -28,7 +30,7 @@ const Hero: FC = () => (
     >
       <LogoSVG maxHeight="2.5rem" maxWidth="2.5rem" width="100%" />
       <Box />
-      <Social />
+      <Social dark />
       <Box
         gap="8xl"
         display="flex"
@@ -37,7 +39,13 @@ const Hero: FC = () => (
         flexDirection="column"
         justifyContent="center"
       >
-        <Box display="flex" flexDirection="column" gap="m" alignItems="center">
+        <Box
+          gap="m"
+          display="flex"
+          textAlign="center"
+          alignItems="center"
+          flexDirection="column"
+        >
           <Typography
             size="large"
             variant="display"
@@ -47,21 +55,36 @@ const Hero: FC = () => (
             Interest Protocol
           </Typography>
           <Typography
+            px="s"
             size="small"
             fontSize="xl"
             variant="body"
             color="onSurface"
+            lineHeight="100%"
             fontFamily="Satoshi"
           >
             Shaping the Future of Decentralized Finance
           </Typography>
+          <Box display="flex" gap="s" mt="4xl">
+            {PRODUCTS.map(({ Icon, id }) => (
+              <a href={`#${id}`} key={unikey()}>
+                <Icon width="100%" maxWidth="3rem" maxHeight="3rem" />
+              </a>
+            ))}
+          </Box>
         </Box>
+      </Box>
+      <Box
+        display="flex"
+        gridColumn="1/-1"
+        alignItems="flex-end"
+        justifyContent="center"
+      >
         <a href="#about">
           <Button
-            bg="white"
+            color="onSurface"
             cursor="pointer"
-            color="surface"
-            variant="tonal"
+            variant="outline"
             borderRadius="xs"
             PrefixIcon={Arrow}
             SuffixIcon={Arrow}

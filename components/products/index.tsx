@@ -7,7 +7,7 @@ import { PRODUCTS } from './products.data';
 import Shadow from './shadow';
 
 const Products: FC = () => (
-  <Box position="relative" py="8xl">
+  <Box position="relative" py="8xl" px="xl">
     <Motion
       top="20%"
       left="-50%"
@@ -25,8 +25,8 @@ const Products: FC = () => (
         variant="title"
         fontWeight="700"
         color="onSurface"
-        fontSize="3.5rem"
         lineHeight="100%"
+        fontSize={['2.25rem', '2.25rem', '3.5rem']}
       >
         Our Products
       </Typography>

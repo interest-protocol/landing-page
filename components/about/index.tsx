@@ -26,21 +26,21 @@ const About: FC = () => (
     </Motion>
     <Typography
       as="h2"
-      px="10xl"
+      px="2xl"
       size="large"
       variant="title"
       color="outline"
-      fontSize="6rem"
       fontWeight="400"
       lineHeight="100%"
       textAlign="center"
+      fontSize={['3.5rem', '3.5rem', '6rem']}
     >
       <Typography
         as="strong"
         size="large"
         variant="title"
-        fontSize="6rem"
         color="onSurface"
+        fontSize={['3.5rem', '3.5rem', '6rem']}
       >
         DeFi infrastructure engineered by Move
       </Typography>{' '}

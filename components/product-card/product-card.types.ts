@@ -8,6 +8,7 @@ interface Tag {
 }
 
 export interface ProductCardProps {
+  id: string;
   link: string;
   name: string;
   image: string;
