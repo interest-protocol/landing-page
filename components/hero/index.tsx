@@ -21,6 +21,7 @@ const Hero: FC = () => (
     <HeroBackground />
     <Box
       p="xl"
+      zIndex="1"
       height="100vh"
       display="grid"
       position="relative"
@@ -70,21 +71,24 @@ const Hero: FC = () => (
             color="onSurface"
             fontFamily="Satoshi"
           >
-            Shaping the future of finance
+            Shaping the Future of Decentralized Finance
           </Typography>
         </Box>
-        <Button
-          bg="white"
-          color="surface"
-          variant="tonal"
-          borderRadius="xs"
-          PrefixIcon={Arrow}
-          SuffixIcon={Arrow}
-          fontWeight="normal"
-          fontFamily="Satoshi"
-        >
-          See our products
-        </Button>
+        <a href="#about">
+          <Button
+            bg="white"
+            cursor="pointer"
+            color="surface"
+            variant="tonal"
+            borderRadius="xs"
+            PrefixIcon={Arrow}
+            SuffixIcon={Arrow}
+            fontWeight="normal"
+            fontFamily="Satoshi"
+          >
+            Learn more
+          </Button>
+        </a>
       </Box>
     </Box>
   </Box>

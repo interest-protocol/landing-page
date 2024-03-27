@@ -27,7 +27,7 @@ const HeroBackground: FC = () => (
         animate={{ opacity: [0, 0, 1, 1, 1, 0] }}
         transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
       >
-        <img src="/img/ball-2.png" alt="ball 1" width="100%" />
+        <img src="/img/ball-2.webp" alt="ball 1" width="100%" />
       </Motion>
       <Motion
         maxWidth="23rem"
@@ -37,7 +37,7 @@ const HeroBackground: FC = () => (
         animate={{ opacity: [1, 1, 0, 0, 0, 1] }}
         transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
       >
-        <img src="/img/ball-3.png" alt="ball 2" width="100%" />
+        <img src="/img/ball-3.webp" alt="ball 2" width="100%" />
       </Motion>
     </Motion>
   </Box>
