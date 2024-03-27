@@ -1,10 +1,8 @@
 import { Box, Button, Motion, Typography } from '@interest-protocol/ui-kit';
 import { FC } from 'react';
-import unikey from 'unikey';
-
-import { SOCIAL } from '@/constants/social';
 
 import HeroBackground from '../hero-background';
+import Social from '../social';
 import { ArrowDownSVG, LogoSVG } from '../svg';
 
 const Arrow = (
@@ -30,23 +28,7 @@ const Hero: FC = () => (
     >
       <LogoSVG maxHeight="2.5rem" maxWidth="2.5rem" width="100%" />
       <Box />
-      <Box display="grid" gridTemplateColumns="1fr 1fr" gap="m">
-        {SOCIAL.map(({ Icon, link, title }) => (
-          <a key={unikey()} href={link} title={title}>
-            <Box
-              bg="onSurface"
-              display="flex"
-              width="2.5rem"
-              height="2.5rem"
-              borderRadius="50%"
-              alignItems="center"
-              justifyContent="center"
-            >
-              <Icon maxHeight="1.5rem" maxWidth="1.5rem" width="100%" />
-            </Box>
-          </a>
-        ))}
-      </Box>
+      <Social />
       <Box
         gap="8xl"
         display="flex"

@@ -1,13 +1,14 @@
 import { Box } from '@interest-protocol/ui-kit';
 import { FC } from 'react';
 
-import { About, Hero, Products } from '@/components';
+import { About, Footer, Hero, Products } from '@/components';
 
 const Home: FC = () => (
   <Box>
     <Hero />
     <About />
     <Products />
+    <Footer />
   </Box>
 );
 
