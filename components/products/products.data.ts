@@ -95,7 +95,7 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
     id: 'suprotocol',
     Icon: SuProtocolSVG,
     name: 'Su Protocol',
-    description: 'Capital-Efficient Collateral Debt Protocol.',
+    description: 'Decentralized money protocol.',
     link: 'https://su-interface.vercel.app/',
     image: '/img/su-protocol',
     network: 'SUI',
