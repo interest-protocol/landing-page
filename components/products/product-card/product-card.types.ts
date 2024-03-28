@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import { SVGProps } from '../svg/svg.types';
+import { SVGProps } from '../../svg/svg.types';
 
 interface Tag {
   title: string;
@@ -12,6 +12,7 @@ export interface ProductCardProps {
   link: string;
   name: string;
   image: string;
+  index: number;
   Icon: FC<SVGProps>;
   description: string;
   network: 'SUI' | 'M2';

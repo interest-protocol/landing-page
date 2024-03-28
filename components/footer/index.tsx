@@ -8,8 +8,9 @@ import Shadow from './shadow';
 const Footer: FC = () => (
   <Box position="relative">
     <Motion
-      top="-150%"
-      right="-50%"
+      top="0%"
+      left="0%"
+      mt="-30%"
       position="absolute"
       initial={{ opacity: 1 }}
       animate={{ opacity: [1, 0.5, 1] }}
@@ -36,7 +37,7 @@ const Footer: FC = () => (
         flexDirection={['column', 'column', 'row']}
       >
         <Typography variant="body" size="medium">
-          Open source software build by leading Move engineers in Web3.
+          Web3 open-source software built by leading Move Language engineers.
         </Typography>
         <Box
           gap="s"
@@ -95,7 +96,7 @@ const Footer: FC = () => (
           textAlign="right"
           color="onSurface"
         >
-          © 2024 — Copyright
+          © {new Date().getFullYear()} — Copyright
           <br />
           All Rights reserved
         </Typography>

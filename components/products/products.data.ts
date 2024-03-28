@@ -1,4 +1,3 @@
-import { ProductCardProps } from '../product-card/product-card.types';
 import {
   AirdropSVG,
   BookSVG,
@@ -14,8 +13,9 @@ import {
   SwapSVG,
   VolatileSVG,
 } from '../svg';
+import { ProductCardProps } from './product-card/product-card.types';
 
-export const PRODUCTS: ReadonlyArray<ProductCardProps> = [
+export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
   {
     id: 'suicoins',
     Icon: SuiCoinsSVG,
