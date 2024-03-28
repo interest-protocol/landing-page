@@ -49,15 +49,15 @@ const ProductCard: FC<ProductCardProps> = ({
         border="1px solid"
         position="relative"
         gap={['xl', '3xl']}
-        py={['m', 'm', '4xl']}
-        px={['m', 'm', '2xl']}
         flexDirection="column"
         whileInView="onscreen"
         variants={cardVariants}
         viewport={{ once: true }}
+        py={['m', 'm', 'm', '4xl']}
+        px={['m', 'm', 'm', '2xl']}
         borderColor="outlineVariant"
         gridTemplateColumns="1fr 1fr"
-        display={['flex', 'flex', 'grid']}
+        display={['flex', 'flex', 'flex', 'grid']}
         initial={index & 1 ? 'offscreenOdd' : 'offscreenEven'}
         nHover={{ borderColor: 'outline', boxShadow: '0 0 0.5rem #fff4' }}
       >
@@ -66,7 +66,7 @@ const ProductCard: FC<ProductCardProps> = ({
           width="4rem"
           height="7rem"
           position="absolute"
-          right={['1rem', '1rem', '5rem']}
+          right={['1rem', '1rem', '1rem', '5rem']}
         >
           <Box position="absolute">
             <TicketSVG maxWidth="7rem" maxHeight="7rem" width="100%" />
@@ -105,9 +105,9 @@ const ProductCard: FC<ProductCardProps> = ({
           gap="xl"
           display="flex"
           flexDirection="column"
-          py={['unset', 'unset', '2xl']}
-          px={['unset', 'unset', '4xl']}
-          alignItems={['unset', 'unset', 'flex-start']}
+          py={['unset', 'unset', 'unset', '2xl']}
+          px={['unset', 'unset', 'unset', '4xl']}
+          alignItems={['unset', 'unset', 'unset', 'flex-start']}
         >
           <Icon maxWidth="3.5rem" maxHeight="3.5rem" height="100%" />
           <Typography variant="display" size="medium" color="onSurface">
@@ -146,7 +146,7 @@ const ProductCard: FC<ProductCardProps> = ({
             onClick={gotoProduct}
             justifyContent="center"
             nHover={{ color: 'onSurface' }}
-            width={['unset', 'unset', 'auto']}
+            width={['unset', 'unset', 'unset', 'auto']}
             SuffixIcon={
               <AnchorArrow maxWidth="0.8rem" maxHeight="0.8rem" width="100%" />
             }
