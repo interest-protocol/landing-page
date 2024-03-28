@@ -6,11 +6,10 @@ import { AnchorArrowSVG } from '../svg';
 import Shadow from './shadow';
 
 const Footer: FC = () => (
-  <Box position="relative">
+  <Box position="relative" py="8xl">
     <Motion
-      top="0%"
-      left="0%"
-      mt="-30%"
+      right="0%"
+      bottom="0%"
       position="absolute"
       initial={{ opacity: 1 }}
       animate={{ opacity: [1, 0.5, 1] }}
@@ -20,12 +19,10 @@ const Footer: FC = () => (
     </Motion>
     <Box
       p="l"
-      my="8xl"
       gap="8xl"
       mx="auto"
       display="flex"
       maxWidth="1440px"
-      position="relative"
       flexDirection="column"
     >
       <Box
