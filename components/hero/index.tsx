@@ -63,7 +63,16 @@ const Hero: FC = () => {
                 wrapper="span"
                 repeat={Infinity}
                 preRenderFirstString
-                sequence={['Interest Protocol', 2000, '$IPX', 2000]}
+                sequence={[
+                  'Interest Protocol',
+                  2000,
+                  '$IPX',
+                  2000,
+                  'Sui',
+                  2000,
+                  'Movement',
+                  2000,
+                ]}
               />
             </Typography>
             <Typography
@@ -72,7 +81,7 @@ const Hero: FC = () => {
               fontSize="xl"
               variant="body"
               color="onSurface"
-              lineHeight="100%"
+              lineHeight="150%"
               fontFamily="Satoshi"
             >
               Shaping the Future of Decentralized Finance
