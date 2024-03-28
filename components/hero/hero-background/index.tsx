@@ -23,7 +23,7 @@ const HeroBackground: FC = () => (
         maxWidth="23rem"
         maxHeight="23rem"
         position="absolute"
-        initial={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
         animate={{ opacity: [0, 0, 1, 1, 1, 0] }}
         transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
       >
@@ -33,7 +33,7 @@ const HeroBackground: FC = () => (
         maxWidth="23rem"
         maxHeight="23rem"
         position="absolute"
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 1 }}
         animate={{ opacity: [1, 1, 0, 0, 0, 1] }}
         transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
       >
