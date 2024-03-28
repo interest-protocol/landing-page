@@ -66,9 +66,11 @@ export const GlobalStyles = css`
     scroll-behavior: smooth;
   }
 
-  body,
-  html {
-    overflow-x: hidden;
+  body {
+    background: #000;
+  }
+  body * {
+    overflow: hidden;
   }
 
   a {

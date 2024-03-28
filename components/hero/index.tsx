@@ -1,10 +1,14 @@
 import { Box, Button, Motion, Typography } from '@interest-protocol/ui-kit';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { FC } from 'react';
+import { TypeAnimation } from 'react-type-animation';
 import unikey from 'unikey';
 
-import { SOCIAL } from '@/constants/social';
-
+import { PRODUCTS } from '../products/products.data';
+import Social from '../social';
 import { ArrowDownSVG, LogoSVG } from '../svg';
+import HeroBackground from './hero-background';
 
 const Arrow = (
   <Motion
@@ -15,74 +19,105 @@ const Arrow = (
   </Motion>
 );
 
-const Hero: FC = () => (
-  <Box
-    p="xl"
-    height="100vh"
-    display="grid"
-    gridTemplateRows="7rem auto 7rem"
-    gridTemplateColumns="7rem auto 7rem"
-  >
-    <LogoSVG maxHeight="3rem" maxWidth="3rem" width="100%" />
-    <Box />
-    <Box display="grid" gridTemplateColumns="1fr 1fr" gap="m">
-      {SOCIAL.map(({ Icon, link, title }) => (
-        <a key={unikey()} href={link} title={title}>
-          <Box
-            width="3rem"
-            height="3rem"
-            bg="onSurface"
-            display="flex"
-            borderRadius="50%"
-            alignItems="center"
-            justifyContent="center"
-          >
-            <Icon maxHeight="1.5rem" maxWidth="1.5rem" width="100%" />
-          </Box>
-        </a>
-      ))}
-    </Box>
-    <Box
-      gap="8xl"
-      display="flex"
-      gridColumn="1/-1"
-      alignItems="center"
-      flexDirection="column"
-      justifyContent="center"
-    >
-      <Box display="flex" flexDirection="column" gap="m" alignItems="center">
-        <Typography
-          size="large"
-          variant="display"
-          color="onSurface"
-          fontFamily="Satoshi"
-        >
-          Interest Protocol
-        </Typography>
-        <Typography
-          size="small"
-          fontSize="xl"
-          variant="body"
-          color="onSurface"
-          fontFamily="Satoshi"
-        >
-          Shaping the future of finance
-        </Typography>
-      </Box>
-      <Button
-        bg="white"
-        color="surface"
-        variant="tonal"
-        borderRadius="xs"
-        PrefixIcon={Arrow}
-        SuffixIcon={Arrow}
-        fontWeight="normal"
-        fontFamily="Satoshi"
+const Hero: FC = () => {
+  const { push } = useRouter();
+
+  return (
+    <Box position="relative">
+      <HeroBackground />
+      <Box
+        p="xl"
+        zIndex="1"
+        display="grid"
+        height="100vh"
+        position="relative"
+        gridTemplateRows="7rem auto 7rem"
+        gridTemplateColumns="7rem auto 7rem"
       >
-        See our products
-      </Button>
+        <LogoSVG maxHeight="2.5rem" maxWidth="2.5rem" width="100%" />
+        <Box />
+        <Social dark />
+        <Box
+          gap="8xl"
+          display="flex"
+          gridColumn="1/-1"
+          alignItems="center"
+          flexDirection="column"
+          justifyContent="center"
+        >
+          <Box
+            gap="m"
+            display="flex"
+            textAlign="center"
+            alignItems="center"
+            flexDirection="column"
+          >
+            <Typography
+              size="large"
+              variant="display"
+              color="onSurface"
+              fontFamily="Satoshi"
+            >
+              <TypeAnimation
+                cursor={true}
+                wrapper="span"
+                repeat={Infinity}
+                preRenderFirstString
+                sequence={[
+                  'Interest Protocol',
+                  2000,
+                  '$IPX',
+                  2000,
+                  'Sui',
+                  2000,
+                  'Movement',
+                  2000,
+                ]}
+              />
+            </Typography>
+            <Typography
+              px="s"
+              size="small"
+              fontSize="xl"
+              variant="body"
+              color="onSurface"
+              lineHeight="150%"
+              fontFamily="Satoshi"
+            >
+              Shaping the Future of Decentralized Finance
+            </Typography>
+            <Box display="flex" gap="s" mt="4xl">
+              {PRODUCTS.map(({ Icon, id }) => (
+                <Link href={`/#${id}`} key={unikey()}>
+                  <Icon width="100%" maxWidth="3rem" maxHeight="3rem" />
+                </Link>
+              ))}
+            </Box>
+          </Box>
+        </Box>
+        <Box
+          display="flex"
+          gridColumn="1/-1"
+          alignItems="flex-end"
+          justifyContent="center"
+        >
+          <Button
+            color="onSurface"
+            cursor="pointer"
+            variant="outline"
+            borderRadius="xs"
+            PrefixIcon={Arrow}
+            SuffixIcon={Arrow}
+            fontWeight="normal"
+            fontFamily="Satoshi"
+            onClick={() => push('/#about')}
+          >
+            Learn more
+          </Button>
+        </Box>
+      </Box>
     </Box>
-  </Box>
-);
+  );
+};
 
 export default Hero;

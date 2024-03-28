@@ -1,13 +1,13 @@
 import { Motion } from '@interest-protocol/ui-kit';
-import { FC } from 'react';
+import { FC, useMemo } from 'react';
 
 const Particle: FC = () => {
-  const top = Math.random();
-  const left = Math.random();
-  const size = Math.random();
-  const opacityTo = Math.random();
-  const opacityFrom = Math.random();
-  const duration = Math.random() * 2 + 3;
+  const top = useMemo(Math.random, []);
+  const left = useMemo(Math.random, []);
+  const size = useMemo(Math.random, []);
+  const opacityTo = useMemo(Math.random, []);
+  const opacityFrom = useMemo(Math.random, []);
+  const duration = useMemo(() => Math.random() * 2 + 3, []);
 
   return (
     <Motion

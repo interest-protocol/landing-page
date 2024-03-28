@@ -4,8 +4,8 @@ import unikey from 'unikey';
 
 import Particle from './particle';
 
-const Header: FC = () => (
-  <Box width="100vw" height="100vh" position="fixed">
+const HeroBackground: FC = () => (
+  <Box position="absolute" top="0">
     {Array.from({ length: 50 }, () => (
       <Particle key={unikey()} />
     ))}
@@ -23,24 +23,24 @@ const Header: FC = () => (
         maxWidth="23rem"
         maxHeight="23rem"
         position="absolute"
-        initial={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
         animate={{ opacity: [0, 0, 1, 1, 1, 0] }}
         transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
       >
-        <img src="/img/ball-2.png" alt="ball 1" width="100%" />
+        <img src="/img/ball-2.webp" alt="ball 1" width="100%" />
       </Motion>
       <Motion
         maxWidth="23rem"
         maxHeight="23rem"
         position="absolute"
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 1 }}
         animate={{ opacity: [1, 1, 0, 0, 0, 1] }}
         transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
       >
-        <img src="/img/ball-3.png" alt="ball 2" width="100%" />
+        <img src="/img/ball-3.webp" alt="ball 2" width="100%" />
       </Motion>
     </Motion>
   </Box>
 );
 
-export default Header;
+export default HeroBackground;
