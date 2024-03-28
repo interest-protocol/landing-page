@@ -9,9 +9,8 @@ import Shadow from './shadow';
 const Products: FC = () => (
   <Box position="relative" py="8xl" px="xl">
     <Motion
-      top="0%"
+      top="10%"
       left="0%"
-      ml="-80%"
       position="absolute"
       initial={{ opacity: 1 }}
       animate={{ opacity: [1, 0.5, 1] }}

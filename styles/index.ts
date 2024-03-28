@@ -69,14 +69,17 @@ export const GlobalStyles = css`
   body {
     background: #000;
   }
-  body * {
-    overflow: hidden;
-  }
 
   a {
     color: inherit;
     text-decoration: none;
   }
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   /* width */
   ::-webkit-scrollbar {
     width: 10px;
