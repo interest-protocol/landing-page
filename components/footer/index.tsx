@@ -23,6 +23,7 @@ const Footer: FC = () => (
       mx="auto"
       display="flex"
       maxWidth="1440px"
+      position="relative"
       flexDirection="column"
     >
       <Box

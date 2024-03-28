@@ -21,7 +21,7 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
     Icon: SuiCoinsSVG,
     name: 'Suicoins',
     description:
-      'Effortless coin minting and distribution; swapping and management.',
+      'Effortless coin minting and distribution; swapping and liquidity management.',
     link: 'https://suicoins.com',
     image: '/img/sui-coins',
     network: 'SUI',
