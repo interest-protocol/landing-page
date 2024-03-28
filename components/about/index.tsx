@@ -53,6 +53,7 @@ const About = () => {
         <Shadow />
       </Motion>
       <Box
+        px="4xl"
         mx="auto"
         id="about"
         display="flex"
@@ -76,8 +77,8 @@ const About = () => {
           <Typography
             as="small"
             size="large"
+            opacity="0.08"
             variant="title"
-            opacity="0.1"
             fontSize={['3.5rem', '3.5rem', '6rem']}
           >
             {phrase.slice(~~(phrase.length * percentage))}
