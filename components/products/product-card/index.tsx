@@ -145,8 +145,8 @@ const ProductCard: FC<ProductCardProps> = ({
             fontFamily="Satoshi"
             onClick={gotoProduct}
             justifyContent="center"
+            nHover={{ color: 'onSurface' }}
             width={['unset', 'unset', 'auto']}
-            nHover={{ nHover: { color: 'onSurface' } }}
             SuffixIcon={
               <AnchorArrow maxWidth="0.8rem" maxHeight="0.8rem" width="100%" />
             }
