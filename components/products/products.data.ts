@@ -96,7 +96,7 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
     Icon: SuProtocolSVG,
     name: 'Su Protocol',
     description: 'Decentralized money protocol.',
-    link: 'https://su-interface.vercel.app/',
+    link: 'https://suprotocol.com/',
     image: '/img/su-protocol',
     network: 'SUI',
     tags: [
