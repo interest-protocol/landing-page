@@ -9,7 +9,7 @@ export const SOCIAL = [
   {
     title: 'X',
     Icon: XSVG,
-    link: 'https://x.com/interest_dinero',
+    link: 'https://x.com/IPXSui',
   },
   {
     title: 'Github',
