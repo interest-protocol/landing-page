@@ -4,7 +4,7 @@ export const SOCIAL = [
   {
     title: 'Discord',
     Icon: DiscordSVG,
-    link: 'https://discord.com/invite/interest',
+    link: 'https://discord.com/invite/interestprotocol',
   },
   {
     title: 'X',
