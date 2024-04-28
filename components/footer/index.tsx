@@ -10,6 +10,7 @@ const Footer: FC = () => (
     <Motion
       right="0%"
       bottom="0%"
+      zIndex="-1"
       position="absolute"
       initial={{ opacity: 1 }}
       animate={{ opacity: [1, 0.5, 1] }}
