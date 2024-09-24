@@ -90,15 +90,6 @@ const Footer: FC = () => (
       >
         <Box display="flex" gap="8xl">
           <Social />
-          <Box
-            p="xl"
-            bg="onSurface"
-            borderRadius="m"
-            alignItems="center"
-            display={['none', 'none', 'none', 'flex']}
-          >
-            <img src="/img/stamp.webp" alt="Portugal Stamp" />
-          </Box>
         </Box>
         <Typography
           variant="body"
@@ -110,21 +101,6 @@ const Footer: FC = () => (
           <br />
           All Rights reserved
         </Typography>
-      </Box>
-      <Box
-        p="xl"
-        bg="onSurface"
-        borderRadius="m"
-        alignItems="center"
-        justifyContent="center"
-        display={['flex', 'flex', 'flex', 'none']}
-      >
-        <img
-          width="100%"
-          alt="Portugal Stamp"
-          src="/img/stamp.webp"
-          style={{ maxHeight: '2rem', objectFit: 'contain' }}
-        />
       </Box>
     </Box>
   </Box>
