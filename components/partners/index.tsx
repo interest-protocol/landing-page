@@ -24,7 +24,6 @@ const Partners: FC = () => {
         flexWrap="wrap"
         height="auto"
         borderRadius="m"
-        justifyContent="center"
         border="1px solid"
         py={['m', 'm', 'm', '2xl']}
         px={['m', 'm', 'm', '4xl']}
@@ -35,11 +34,11 @@ const Partners: FC = () => {
           return (
             <Box
               m="1rem"
-              objectFit="cover"
-              width={['100%', 'auto', 'auto', 'auto']}
               key={unikey()}
+              cursor="pointer"
+              width={['100%', 'auto', 'auto', 'auto']}
             >
-              <Link href={item.url} cursor="pointer">
+              <Link href={item.url}>
                 <img src={item.image} alt={item.label} />
               </Link>
             </Box>
