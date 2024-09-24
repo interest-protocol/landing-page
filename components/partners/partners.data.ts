@@ -1,10 +1,6 @@
-interface ImageProps {
-  image: string;
-  label: string;
-  url: string;
-}
+import { PartnersImage } from './partners.types';
 
-export const MOCK_IMAGES: ReadonlyArray<ImageProps> = [
+export const PARTNERS_IMAGES: ReadonlyArray<PartnersImage> = [
   {
     image: '/img/movement-labs.webp',
     label: 'Movement Labs',
