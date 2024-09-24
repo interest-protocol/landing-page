@@ -7,7 +7,13 @@ import { MOCK_IMAGES } from './images';
 
 const Partners: FC = () => {
   return (
-    <Box mx="l" display="flex" gap="0.5rem" flexDirection="column">
+    <Box
+      mx="l"
+      display="flex"
+      gap="0.5rem"
+      maxWidth="1440px"
+      flexDirection="column"
+    >
       <Typography
         pb="8xl"
         size="large"
@@ -25,6 +31,7 @@ const Partners: FC = () => {
         height="auto"
         borderRadius="m"
         justifyContent="center"
+        alignItems="center"
         border="1px solid"
         py={['m', 'm', 'm', '2xl']}
         px={['m', 'm', 'm', '4xl']}
@@ -35,12 +42,17 @@ const Partners: FC = () => {
           return (
             <Box
               m="1rem"
+              width="auto"
               key={unikey()}
               cursor="pointer"
-              width={['100%', 'auto', 'auto', 'auto']}
+              overflow="hidden"
             >
               <Link href={item.url} target="blank">
-                <img src={item.image} alt={item.label} />
+                <img
+                  src={item.image}
+                  alt={item.label}
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
               </Link>
             </Box>
           );

@@ -52,7 +52,7 @@ export const MOCK_IMAGES: ReadonlyArray<ImageProps> = [
   },
   {
     image: '/img/pyth.webp',
-    label: 'Pith',
+    label: 'Pyth',
     url: 'https://www.pyth.network/',
   },
   {
@@ -62,7 +62,7 @@ export const MOCK_IMAGES: ReadonlyArray<ImageProps> = [
   },
   {
     image: '/img/stamp.webp',
-    label: 'Stamp',
-    url: '',
+    label: 'Portugal Stamp',
+    url: 'https://recuperarportugal.gov.pt/',
   },
 ];
