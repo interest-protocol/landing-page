@@ -24,6 +24,7 @@ const Partners: FC = () => {
         flexWrap="wrap"
         height="auto"
         borderRadius="m"
+        justifyContent="center"
         border="1px solid"
         py={['m', 'm', 'm', '2xl']}
         px={['m', 'm', 'm', '4xl']}
