@@ -39,7 +39,7 @@ const Partners: FC = () => {
               cursor="pointer"
               width={['100%', 'auto', 'auto', 'auto']}
             >
-              <Link href={item.url}>
+              <Link href={item.url} target="blank">
                 <img src={item.image} alt={item.label} />
               </Link>
             </Box>
