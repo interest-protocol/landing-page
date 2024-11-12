@@ -46,7 +46,7 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
     name: 'Interest DEX',
     description:
       'Explore all the tooling available on SuiCoins, but in a different blockchain.',
-    link: 'https://movement.interestprotocol.com',
+    link: 'https://interest.xyz',
     image: '/img/movement',
     network: 'M2',
     tags: [
