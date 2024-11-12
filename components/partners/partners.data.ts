@@ -27,11 +27,6 @@ export const PARTNERS_IMAGES: ReadonlyArray<PartnersImage> = [
     url: 'https://www.movewiffrens.xyz/',
   },
   {
-    image: '/img/hop.webp',
-    label: 'Hop Aggregator',
-    url: 'https://hop.ag/',
-  },
-  {
     image: '/img/up-network.webp',
     label: 'Up Network',
     url: 'https://www.upnetwork.xyz/',
