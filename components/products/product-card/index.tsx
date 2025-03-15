@@ -109,7 +109,13 @@ const ProductCard: FC<ProductCardProps> = ({
           px={['unset', 'unset', 'unset', '4xl']}
           alignItems={['unset', 'unset', 'unset', 'flex-start']}
         >
-          <Icon maxWidth="3.5rem" maxHeight="3.5rem" height="100%" />
+          {typeof Icon == 'string' ? (
+            <Box bg="#fff" width="3.5rem" height="3.5rem" borderRadius="100%">
+              <img src={`${Icon}.webp`} alt={id} width="56px" height="56px" />
+            </Box>
+          ) : (
+            <Icon maxWidth="3.5rem" maxHeight="3.5rem" height="100%" />
+          )}
           <Typography variant="display" size="medium" color="onSurface">
             {name}
           </Typography>

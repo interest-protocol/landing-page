@@ -4,8 +4,11 @@ import {
   CogSVG,
   CoinSVG,
   DAOSVG,
+  DifferenceSVG,
   IPXMovementSVG,
   PlusSVG,
+  RocketSVG,
+  SnowSVG,
   StableSVG,
   SuiCoinsSVG,
   SuiTearsSVG,
@@ -88,6 +91,53 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
       {
         title: 'Utilities',
         Icon: CoinSVG,
+      },
+    ],
+  },
+  {
+    id: 'memez',
+    Icon: '/img/memez-head',
+    name: 'Memez.GG',
+    description:
+      'Welcome to the land of coins endless possibilities—your one-stop shop to explore, trade, discover, create and edit coins.',
+    link: 'https://coins.memez.gg/',
+    image: '/img/coins-memez',
+    network: 'SUI',
+    tags: [
+      {
+        title: 'Create Coin',
+        Icon: PlusSVG,
+      },
+      {
+        title: 'Launchpad',
+        Icon: RocketSVG,
+      },
+      {
+        title: 'Swap',
+        Icon: DifferenceSVG,
+      },
+    ],
+  },
+  {
+    id: 'walrus',
+    Icon: SnowSVG,
+    name: 'WINTER WALRUS',
+    description: 'LST protocol securing the Walrus Network.',
+    link: 'https://www.winterwalrus.com/',
+    image: '/img/winter-walrus',
+    network: 'SUI',
+    tags: [
+      {
+        title: 'LST',
+        Icon: StableSVG,
+      },
+      {
+        title: 'Stake',
+        Icon: CogSVG,
+      },
+      {
+        title: 'Walrus',
+        Icon: SnowSVG,
       },
     ],
   },
