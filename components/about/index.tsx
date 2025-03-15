@@ -1,47 +1,31 @@
 import { Box, Motion, Typography } from '@interest-protocol/ui-kit';
-import { startTransition, useRef, useState } from 'react';
+import { startTransition, useState } from 'react';
 
 import { useEventListener } from '@/hooks';
 
 import Shadow from './shadow';
 
-const phrase = 'Move-Secured DeFi, Powered by the Fastest Chains.';
+const PHRASE = 'Move-Secured DeFi, Powered by the Fastest Chains.';
 
 const About = () => {
-  const ref = useRef<HTMLDivElement>(null);
   const [percentage, setPercentage] = useState(0);
 
   const updatePercentage = () => {
-    if (ref.current) {
-      const { scrollHeight, clientHeight } = ref.current;
-      const { innerHeight, scrollY } = window;
+    const { innerHeight, scrollY } = window;
 
-      const halfScreen = innerHeight / 2;
+    const halfHeight = innerHeight * 0.5;
 
-      const endPoint = scrollHeight - halfScreen;
+    const percentage = scrollY / halfHeight - 1;
 
-      const initPoint = clientHeight - halfScreen;
+    const result = Math.min(Math.max(0, percentage), 1);
 
-      const result =
-        scrollY < initPoint
-          ? 0
-          : scrollY > endPoint
-            ? 1
-            : (scrollY - initPoint) / (endPoint - initPoint);
-
-      startTransition(() => setPercentage(result));
-    }
+    startTransition(() => setPercentage(result));
   };
 
   useEventListener('scroll', updatePercentage);
 
   return (
-    <Box
-      position="relative"
-      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-      // @ts-ignore
-      ref={ref}
-    >
+    <Box position="relative">
       <Motion
         top="-80%"
         right="0%"
@@ -73,7 +57,7 @@ const About = () => {
           textAlign="center"
           fontSize={['3.5rem', '3.5rem', '6rem']}
         >
-          {phrase.slice(0, ~~(phrase.length * percentage))}
+          {PHRASE.slice(0, ~~(PHRASE.length * percentage))}
           <Typography
             as="small"
             size="large"
@@ -81,7 +65,7 @@ const About = () => {
             variant="title"
             fontSize={['3.5rem', '3.5rem', '6rem']}
           >
-            {phrase.slice(~~(phrase.length * percentage))}
+            {PHRASE.slice(~~(PHRASE.length * percentage))}
           </Typography>
         </Typography>
       </Box>
