@@ -12,9 +12,7 @@ import {
   StableSVG,
   SuiCoinsSVG,
   SuiTearsSVG,
-  SuProtocolSVG,
   SwapSVG,
-  VolatileSVG,
 } from '../svg';
 import { ProductCardProps } from './product-card/product-card.types';
 
@@ -138,25 +136,6 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
       {
         title: 'Walrus',
         Icon: SnowSVG,
-      },
-    ],
-  },
-  {
-    id: 'suprotocol',
-    Icon: SuProtocolSVG,
-    name: 'Su Protocol',
-    description: 'Decentralized money protocol.',
-    link: 'https://suprotocol.com/',
-    image: '/img/su-protocol',
-    network: 'SUI',
-    tags: [
-      {
-        title: 'Leverage Sui',
-        Icon: VolatileSVG,
-      },
-      {
-        title: 'Stable Coin',
-        Icon: StableSVG,
       },
     ],
   },
