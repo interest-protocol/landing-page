@@ -4,14 +4,15 @@ import {
   CogSVG,
   CoinSVG,
   DAOSVG,
+  DifferenceSVG,
   IPXMovementSVG,
   PlusSVG,
+  RocketSVG,
+  SnowSVG,
   StableSVG,
   SuiCoinsSVG,
   SuiTearsSVG,
-  SuProtocolSVG,
   SwapSVG,
-  VolatileSVG,
 } from '../svg';
 import { ProductCardProps } from './product-card/product-card.types';
 
@@ -92,21 +93,49 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
     ],
   },
   {
-    id: 'suprotocol',
-    Icon: SuProtocolSVG,
-    name: 'Su Protocol',
-    description: 'Decentralized money protocol.',
-    link: 'https://suprotocol.com/',
-    image: '/img/su-protocol',
+    id: 'memez',
+    Icon: '/img/memez-head',
+    name: 'Memez.GG',
+    description:
+      'Welcome to the land of coins endless possibilities—your one-stop shop to explore, trade, discover, create and edit coins.',
+    link: 'https://coins.memez.gg/',
+    image: '/img/coins-memez',
     network: 'SUI',
     tags: [
       {
-        title: 'Leverage Sui',
-        Icon: VolatileSVG,
+        title: 'Create Coin',
+        Icon: PlusSVG,
       },
       {
-        title: 'Stable Coin',
+        title: 'Launchpad',
+        Icon: RocketSVG,
+      },
+      {
+        title: 'Swap',
+        Icon: DifferenceSVG,
+      },
+    ],
+  },
+  {
+    id: 'walrus',
+    Icon: SnowSVG,
+    name: 'WINTER WALRUS',
+    description: 'LST protocol securing the Walrus Network.',
+    link: 'https://www.winterwalrus.com/',
+    image: '/img/winter-walrus',
+    network: 'SUI',
+    tags: [
+      {
+        title: 'LST',
         Icon: StableSVG,
+      },
+      {
+        title: 'Stake',
+        Icon: CogSVG,
+      },
+      {
+        title: 'Walrus',
+        Icon: SnowSVG,
       },
     ],
   },

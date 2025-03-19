@@ -13,7 +13,7 @@ export interface ProductCardProps {
   name: string;
   image: string;
   index: number;
-  Icon: FC<SVGProps>;
+  Icon: FC<SVGProps> | string;
   description: string;
   network: 'SUI' | 'M2';
   tags: ReadonlyArray<Tag>;
