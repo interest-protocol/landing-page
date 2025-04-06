@@ -64,7 +64,7 @@ const Hero: FC = () => {
                 repeat={Infinity}
                 preRenderFirstString
                 sequence={[
-                  'Interest Protocol',
+                  'Interest Labs',
                   2000,
                   '$IPX',
                   2000,
