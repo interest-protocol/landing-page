@@ -119,7 +119,7 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
   {
     id: 'walrus',
     Icon: SnowSVG,
-    name: 'WINTER WALRUS',
+    name: 'Winter Walrus',
     description: 'LST protocol securing the Walrus Network.',
     link: 'https://www.winterwalrus.com/',
     image: '/img/winter-walrus',
