@@ -4,15 +4,15 @@ import { FC } from 'react';
 const SEO: FC = () => (
   <Head>
     <meta charSet="utf-8" />
-    <title>Interest Protocol</title>
-    <meta name="title" content="Interest Protocol" />
+    <title>Interest Labs</title>
+    <meta name="title" content="Interest Labs" />
     <meta
       name="description"
       content="Move-Secured DeFi, Powered by the Fastest Chains."
     />
     <meta property="og:locale" content="en_US" />
-    <meta property="og:title" content="Interest Protocol" />
-    <meta property="og:site_name" content="Interest Protocol" />
+    <meta property="og:title" content="Interest Labs" />
+    <meta property="og:site_name" content="Interest Labs" />
     <meta
       property="og:description"
       content="Move-Secured DeFi, Powered by the Fastest Chains."
@@ -25,10 +25,10 @@ const SEO: FC = () => (
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="256" />
     <meta property="og:image:height" content="256" />
-    <meta property="og:image:alt" content="Interest Protocol" />
+    <meta property="og:image:alt" content="Interest Labs" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Interest Protocol" />
-    <meta name="twitter:site" content="https://interestprotocol.com" />
+    <meta name="twitter:title" content="Interest Labs" />
+    <meta name="twitter:site" content="https://interestLabs.io" />
     <meta name="twitter:image" content="/android-chrome-256x256.png" />
     <meta
       name="twitter:description"
