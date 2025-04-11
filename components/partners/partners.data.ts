@@ -51,9 +51,4 @@ export const PARTNERS_IMAGES: ReadonlyArray<PartnersImage> = [
     label: 'Gorilla Maverz',
     url: 'https://coinmarketcap.com/currencies/gorilla-token/',
   },
-  {
-    image: '/img/stamp.webp',
-    label: 'Portugal Stamp',
-    url: 'https://recuperarportugal.gov.pt/',
-  },
 ];

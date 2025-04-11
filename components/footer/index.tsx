@@ -1,5 +1,7 @@
 import { Box, Button, Motion, Typography } from '@interest-protocol/ui-kit';
+import Link from 'next/link';
 import { FC } from 'react';
+import unikey from 'unikey';
 
 import Social from '../social';
 import { AnchorArrowSVG } from '../svg';
@@ -31,18 +33,35 @@ const Footer: FC = () => (
         gap="2xl"
         display="flex"
         color="onSurface"
-        mb={['unset', 'unset', '8xl']}
+        mb={['unset', 'unset', 'unset', '8xl']}
         justifyContent="space-between"
-        flexDirection={['column', 'column', 'row']}
+        flexDirection={['column', 'column', 'column', 'row']}
       >
-        <Typography variant="body" size="medium">
-          Web3 open-source software built by leading Move Language engineers.
-        </Typography>
+        <Box>
+          <Typography variant="body" size="medium">
+            Web3 open-source software built by leading Move Language engineers.
+          </Typography>
+          <Box width={['100%', '28rem', '28rem', '23rem']} gap="1rem" pt="1rem">
+            <Box width="auto" key={unikey()} cursor="pointer" overflow="hidden">
+              <Link href="https://recuperarportugal.gov.pt/" target="blank">
+                <img
+                  src="/img/stamp.webp"
+                  alt="Portugal Stamp"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                  }}
+                />
+              </Link>
+            </Box>
+          </Box>
+        </Box>
+
         <Box
           gap="s"
           display="flex"
           flexDirection="column"
-          alignItems={['unset', 'unset', 'flex-end']}
+          alignItems={['unset', 'unset', 'unset', 'flex-end']}
         >
           <a
             href="https://docs.interestprotocol.com"
