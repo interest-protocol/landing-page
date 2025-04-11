@@ -52,52 +52,52 @@ export const PARTNERS_IMAGES: ReadonlyArray<PartnersImage> = [
     url: 'https://coinmarketcap.com/currencies/gorilla-token/',
   },
   {
-    image: '/img/bucket.webp',
+    image: '/img/bucket.png',
     label: 'Bucket',
     url: 'https://www.bucketprotocol.io/',
   },
   {
-    image: '/img/Recrd.webp',
-    label: 'Nemo Prootol',
-    url: 'https://recrd.com',
-  },
-  {
-    image: '/img/scallop.webp',
-    label: 'Scallop',
-    url: 'https://www.scallop.io/',
-  },
-  {
-    image: '/img/patara.webp',
-    label: 'Patara',
-    url: 'https://patara.app/',
-  },
-  {
-    image: '/img/nemo.webp',
+    image: '/img/Recrd.png',
     label: 'Nemo Prootol',
     url: 'https://www.nemoprotocol.com/',
   },
   {
-    image: '/img/studiomirai.webp',
-    label: 'Studio Mirai',
-    url: 'https://x.com/_StudioMirai',
-  },
-  {
-    image: '/img/doubleup.webp',
-    label: 'Double Up',
-    url: 'https://www.doubleup.fun/',
-  },
-  {
-    image: '/img/suiplay.webp',
-    label: 'SuiPlay',
-    url: 'https://www.suiplay0x1.com/',
-  },
-  {
-    image: '/img/nexa.webp',
+    image: '/img/nexa.png',
     label: 'Nexa',
     url: 'https://www.insidex.trade/',
   },
   {
-    image: '/img/suiF.webp',
+    image: '/img/nemo1.png',
+    label: 'Nemo Prootol',
+    url: 'https://www.nemoprotocol.com/',
+  },
+  {
+    image: '/img/scallop.png',
+    label: 'Scallop',
+    url: 'https://www.scallop.io/',
+  },
+  {
+    image: '/img/patara.png',
+    label: 'Patara',
+    url: 'https://patara.app/',
+  },
+  {
+    image: '/img/doubleup.png',
+    label: 'Double Up',
+    url: 'https://www.doubleup.fun/',
+  },
+  {
+    image: '/img/studiomirai.png',
+    label: 'Studio Mirai',
+    url: 'https://x.com/_StudioMirai',
+  },
+  {
+    image: '/img/suiplay.png',
+    label: 'SuiPlay',
+    url: 'https://www.suiplay0x1.com/',
+  },
+  {
+    image: '/img/suif.png',
     label: 'Sui Foundation',
     url: 'https://sui.io/',
   },
