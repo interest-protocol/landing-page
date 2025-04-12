@@ -97,7 +97,7 @@ export const PARTNERS_IMAGES: ReadonlyArray<PartnersImage> = [
     url: 'https://www.suiplay0x1.com/',
   },
   {
-    image: '/img/suif.webp',
+    image: '/img/suiF.webp',
     label: 'Sui Foundation',
     url: 'https://sui.io/',
   },
