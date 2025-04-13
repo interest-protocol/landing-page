@@ -62,11 +62,6 @@ export const PARTNERS_IMAGES: ReadonlyArray<PartnersImage> = [
     url: 'https://recrd.com',
   },
   {
-    image: '/img/nexa.webp',
-    label: 'Nexa',
-    url: 'https://www.insidex.trade/',
-  },
-  {
     image: '/img/scallop.webp',
     label: 'Scallop',
     url: 'https://www.scallop.io/',
@@ -77,9 +72,19 @@ export const PARTNERS_IMAGES: ReadonlyArray<PartnersImage> = [
     url: 'https://patara.app/',
   },
   {
+    image: '/img/nemo.webp',
+    label: 'Nemo Prootol',
+    url: 'https://www.nemoprotocol.com/',
+  },
+  {
     image: '/img/studiomirai.webp',
     label: 'Studio Mirai',
     url: 'https://x.com/_StudioMirai',
+  },
+  {
+    image: '/img/doubleup.webp',
+    label: 'Double Up',
+    url: 'https://www.doubleup.fun/',
   },
   {
     image: '/img/suiplay.webp',
@@ -87,18 +92,13 @@ export const PARTNERS_IMAGES: ReadonlyArray<PartnersImage> = [
     url: 'https://www.suiplay0x1.com/',
   },
   {
+    image: '/img/nexa.webp',
+    label: 'Nexa',
+    url: 'https://www.insidex.trade/',
+  },
+  {
     image: '/img/suiF.webp',
     label: 'Sui Foundation',
     url: 'https://sui.io/',
-  },
-  {
-    image: '/img/nemo.webp',
-    label: 'Nemo Prootol',
-    url: 'https://www.nemoprotocol.com/',
-  },
-  {
-    image: '/img/doubleup.webp',
-    label: 'Double Up',
-    url: 'https://www.doubleup.fun/',
   },
 ];
