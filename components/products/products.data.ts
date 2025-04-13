@@ -9,7 +9,6 @@ import {
   PlusSVG,
   RocketSVG,
   SnowSVG,
-  StableSVG,
   SuiCoinsSVG,
   SuiTearsSVG,
   SwapSVG,
@@ -120,22 +119,23 @@ export const PRODUCTS: ReadonlyArray<Omit<ProductCardProps, 'index'>> = [
     id: 'walrus',
     Icon: SnowSVG,
     name: 'Winter Walrus',
-    description: 'LST protocol securing the Walrus Network.',
+    description:
+      'Welcome to the land of coins endless possibilities—your one-stop shop to explore, trade, discover, create and edit coins.',
     link: 'https://www.winterwalrus.com/',
     image: '/img/winter-walrus',
     network: 'SUI',
     tags: [
       {
         title: 'LST',
-        Icon: StableSVG,
+        Icon: PlusSVG,
       },
       {
         title: 'Stake',
-        Icon: CogSVG,
+        Icon: RocketSVG,
       },
       {
         title: 'Walrus',
-        Icon: SnowSVG,
+        Icon: DifferenceSVG,
       },
     ],
   },
