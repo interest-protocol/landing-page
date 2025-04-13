@@ -59,7 +59,7 @@ const Partners: FC = () => (
                   height: '100%',
                   objectFit: 'contain',
                   maxHeight: '2.5rem',
-                  minWidth: '99px',
+                  minWidth: '160px',
                 }}
               />
             </Link>
