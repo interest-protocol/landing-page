@@ -67,11 +67,6 @@ export const PARTNERS_IMAGES: ReadonlyArray<PartnersImage> = [
     url: 'https://www.insidex.trade/',
   },
   {
-    image: '/img/nemo.webp',
-    label: 'Nemo Prootol',
-    url: 'https://www.nemoprotocol.com/',
-  },
-  {
     image: '/img/scallop.webp',
     label: 'Scallop',
     url: 'https://www.scallop.io/',
@@ -80,11 +75,6 @@ export const PARTNERS_IMAGES: ReadonlyArray<PartnersImage> = [
     image: '/img/patara.webp',
     label: 'Patara',
     url: 'https://patara.app/',
-  },
-  {
-    image: '/img/doubleup.webp',
-    label: 'Double Up',
-    url: 'https://www.doubleup.fun/',
   },
   {
     image: '/img/studiomirai.webp',
@@ -100,5 +90,15 @@ export const PARTNERS_IMAGES: ReadonlyArray<PartnersImage> = [
     image: '/img/suiF.webp',
     label: 'Sui Foundation',
     url: 'https://sui.io/',
+  },
+  {
+    image: '/img/nemo.webp',
+    label: 'Nemo Prootol',
+    url: 'https://www.nemoprotocol.com/',
+  },
+  {
+    image: '/img/doubleup.webp',
+    label: 'Double Up',
+    url: 'https://www.doubleup.fun/',
   },
 ];
