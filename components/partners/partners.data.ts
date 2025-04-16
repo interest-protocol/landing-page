@@ -51,4 +51,54 @@ export const PARTNERS_IMAGES: ReadonlyArray<PartnersImage> = [
     label: 'Gorilla Maverz',
     url: 'https://coinmarketcap.com/currencies/gorilla-token/',
   },
+  {
+    image: '/img/bucket.webp',
+    label: 'Bucket',
+    url: 'https://www.bucketprotocol.io/',
+  },
+  {
+    image: '/img/Recrd.webp',
+    label: 'Nemo Prootol',
+    url: 'https://recrd.com',
+  },
+  {
+    image: '/img/scallop.webp',
+    label: 'Scallop',
+    url: 'https://www.scallop.io/',
+  },
+  {
+    image: '/img/patara.webp',
+    label: 'Patara',
+    url: 'https://patara.app/',
+  },
+  {
+    image: '/img/nemo.webp',
+    label: 'Nemo Prootol',
+    url: 'https://www.nemoprotocol.com/',
+  },
+  {
+    image: '/img/studiomirai.webp',
+    label: 'Studio Mirai',
+    url: 'https://x.com/_StudioMirai',
+  },
+  {
+    image: '/img/doubleup.webp',
+    label: 'Double Up',
+    url: 'https://www.doubleup.fun/',
+  },
+  {
+    image: '/img/suiplay.webp',
+    label: 'SuiPlay',
+    url: 'https://www.suiplay0x1.com/',
+  },
+  {
+    image: '/img/nexa.webp',
+    label: 'Nexa',
+    url: 'https://www.insidex.trade/',
+  },
+  {
+    image: '/img/suiF.webp',
+    label: 'Sui Foundation',
+    url: 'https://sui.io/',
+  },
 ];
